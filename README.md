@@ -298,7 +298,8 @@ human decides which version wins; here the change was additive, so it merged cle
 Real output of `git fetch --all && git log --graph --oneline --all --decorate`:
 
 ```
-*   8cb8817 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+* 51cb202 (HEAD -> main, origin/main, origin/HEAD) Document the multi-developer workflow, Pull Request and code review
+*   8cb8817 Merge pull request #1 from 6-month-fde-challenge/feature-power-module
 |\
 | * b3ab486 (origin/feature-power-module) Add power module and expose the result on the dashboard
 |/
@@ -310,9 +311,10 @@ Real output of `git fetch --all && git log --graph --oneline --all --decorate`:
 
 Reading the graph bottom-up: four commits by Developer A build `main`; the history forks
 at `ca6835b` where Developer B created `feature-power-module`; `b3ab486` is Developer B's
-feature commit on that branch; and `8cb8817` is the merge commit that joined the branch
-back into `main` when Pull Request #1 was merged. `origin/feature-power-module` still
-points at `b3ab486`, showing the branch was kept on the remote.
+feature commit on that branch; `8cb8817` is the merge commit that joined the branch back
+into `main` when Pull Request #1 was merged; and `51cb202` is Developer A committing this
+documentation afterwards. `origin/feature-power-module` still points at `b3ab486`,
+showing the branch was kept on the remote.
 
 ---
 
