@@ -1,0 +1,55 @@
+TASK 4 - MULTI-DEVELOPER GITHUB SIMULATION - SUBMISSION LINKS
+=============================================================
+
+PUBLIC REPOSITORY URL:
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation
+
+PULL REQUEST URL:
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1
+
+-------------------------------------------------------------
+PULL REQUEST DETAILS
+-------------------------------------------------------------
+PR number        : #1
+PR title         : Add power module to the calculator
+Source branch    : feature-power-module   (pushed by Developer B)
+Target branch    : main
+State            : MERGED
+Merged at        : 2026-09-21T12:56:59Z
+Merge commit SHA : 8cb881749c70b0795e22e527bc42ab1b34178b40
+Merge strategy   : merge commit (--merge), branch intentionally NOT deleted
+Diff             : 3 files changed, 19 insertions(+), 1 deletion(-)
+
+-------------------------------------------------------------
+SUPPORTING LINKS
+-------------------------------------------------------------
+Default branch (main):
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/tree/main
+
+Feature branch still on the remote (evidence of the branch workflow):
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/tree/feature-power-module
+
+Code review posted on the Pull Request:
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#pullrequestreview-5266839970
+
+Same review also posted as a PR conversation comment:
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#issuecomment-5760838331
+
+Merge commit on GitHub:
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/commit/8cb881749c70b0795e22e527bc42ab1b34178b40
+
+Developer B's feature commit:
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/commit/b3ab4862bf2cded7ea5caa20393fb747b8171c9a
+
+-------------------------------------------------------------
+THE TWO DEVELOPER IDENTITIES IN THE HISTORY
+-------------------------------------------------------------
+Developer A (veerandra7) <veerandra.data@gmail.com>   - 4 baseline commits
+Developer B             <developer-b@example.com>    - 1 feature commit on feature-power-module
+
+-------------------------------------------------------------
+WHERE TO LOOK
+-------------------------------------------------------------
+workflow.md       - every command run by both developers, with real output
+PULL_REQUEST.md   - the full PR body, the review comment and the merge result
+README.md         - project docs plus the git concept walkthrough
