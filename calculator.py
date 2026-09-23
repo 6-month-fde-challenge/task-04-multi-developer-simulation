@@ -5,14 +5,17 @@ from addition_module import addition
 from subtract_module import subtract
 from multiply_module import multiply
 from division_module import division
+from power_module import power
 
 total = addition(a, b)
 subtraction = subtract(a, b)
 multiplication = multiply(a, b)
 div = division(a, b)
+powered = power(a, b)
 
 if __name__ == "__main__":
     print("Addition of the two numbers is       : ", total)
     print("Subtraction of the two numbers is    : ", subtraction)
     print("Multiplication of the two numbers is : ", multiplication)
     print("Division of the two numbers is       : ", div)
+    print("Power of the two numbers is          : ", powered)
