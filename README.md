@@ -98,17 +98,17 @@ identity - not as two commits from one folder.
 | Local folder | `03_git_and_git_hub/task-04-multi-developer-simulation` | `03_git_and_git_hub/task-04-devB-clone` (a real `git clone`) |
 | `user.name` | `Developer A (veerandra7)` | `Developer B` |
 | `user.email` | `veerandra.data@gmail.com` | `developer-b@example.com` |
-| Commits | The 4 baseline commits | The feature commit `b3ab486` |
+| Commits | The 4 baseline commits | The feature commit `7cc6a4e` |
 
 Proof - real output of `git log --format='%h %an <%ae> %s'` on `main`:
 
 ```
-8cb8817 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
-b3ab486 Developer B <developer-b@example.com> Add power module and expose the result on the dashboard
-ca6835b Developer A (veerandra7) <veerandra.data@gmail.com> Add calculator orchestrator and dashboard presentation layer
-6cd8f46 Developer A (veerandra7) <veerandra.data@gmail.com> Add the four arithmetic modules guarded by API key and profile checks
-bccd4d0 Developer A (veerandra7) <veerandra.data@gmail.com> Add login, profile and numeric input collection modules
-a0a23e2 Developer A (veerandra7) <veerandra.data@gmail.com> Add project scaffolding with gitignore and environment-based configuration
+239a281 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+7cc6a4e Developer B <developer-b@example.com> Add power module and expose the result on the dashboard
+a93b747 Developer A (veerandra7) <veerandra.data@gmail.com> Add calculator orchestrator and dashboard presentation layer
+180210e Developer A (veerandra7) <veerandra.data@gmail.com> Add the four arithmetic modules guarded by API key and profile checks
+ab007de Developer A (veerandra7) <veerandra.data@gmail.com> Add login, profile and numeric input collection modules
+90e6154 Developer A (veerandra7) <veerandra.data@gmail.com> Add project scaffolding with gitignore and environment-based configuration
 ```
 
 Two distinct author identities appear in `main`'s history, plus the GitHub account that
@@ -125,7 +125,7 @@ created the merge commit on the server.
 | Title | Add power module to the calculator |
 | Head -> Base | `feature-power-module` -> `main` |
 | State | **MERGED** at `2026-09-21T12:56:59Z` |
-| Merge commit | `8cb881749c70b0795e22e527bc42ab1b34178b40` |
+| Merge commit | `239a281139910882b3bf30baea5f14c445fb9c17` |
 | Diff | 3 files changed, 19 insertions(+), 1 deletion(-) |
 
 **Description (abridged - full text in [`PULL_REQUEST.md`](PULL_REQUEST.md)):** adds
@@ -209,7 +209,7 @@ before branching so the feature started from the newest `main`; Developer A ran
 `git pull origin main` after the merge to bring Developer B's work down:
 
 ```
-Updating ca6835b..8cb8817
+Updating a93b747..239a281
 Fast-forward
  calculator.py   |  3 +++
  dashboard.py    |  3 ++-
@@ -286,7 +286,7 @@ the feature branch - which preserves the branch's shape in the history. The alte
 gh pr merge 1 --merge
 ```
 
-The resulting merge commit `8cb8817` has parents `ca6835b` (main) and `b3ab486`
+The resulting merge commit `239a281` has parents `a93b747` (main) and `7cc6a4e`
 (feature), which is what the `|\` fork in the graph below shows. When two developers
 change the same lines, this is the step where git reports a **merge conflict** and a
 human decides which version wins; here the change was additive, so it merged cleanly.
@@ -298,22 +298,22 @@ human decides which version wins; here the change was additive, so it merged cle
 Real output of `git fetch --all && git log --graph --oneline --all --decorate`:
 
 ```
-* 51cb202 (HEAD -> main, origin/main, origin/HEAD) Document the multi-developer workflow, Pull Request and code review
-*   8cb8817 Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+* 758afbf (HEAD -> main, origin/main, origin/HEAD) Document the multi-developer workflow, Pull Request and code review
+*   239a281 Merge pull request #1 from 6-month-fde-challenge/feature-power-module
 |\
-| * b3ab486 (origin/feature-power-module) Add power module and expose the result on the dashboard
+| * 7cc6a4e (origin/feature-power-module) Add power module and expose the result on the dashboard
 |/
-* ca6835b Add calculator orchestrator and dashboard presentation layer
-* 6cd8f46 Add the four arithmetic modules guarded by API key and profile checks
-* bccd4d0 Add login, profile and numeric input collection modules
-* a0a23e2 Add project scaffolding with gitignore and environment-based configuration
+* a93b747 Add calculator orchestrator and dashboard presentation layer
+* 180210e Add the four arithmetic modules guarded by API key and profile checks
+* ab007de Add login, profile and numeric input collection modules
+* 90e6154 Add project scaffolding with gitignore and environment-based configuration
 ```
 
 Reading the graph bottom-up: four commits by Developer A build `main`; the history forks
-at `ca6835b` where Developer B created `feature-power-module`; `b3ab486` is Developer B's
-feature commit on that branch; `8cb8817` is the merge commit that joined the branch back
-into `main` when Pull Request #1 was merged; and `51cb202` is Developer A committing this
-documentation afterwards. `origin/feature-power-module` still points at `b3ab486`,
+at `a93b747` where Developer B created `feature-power-module`; `7cc6a4e` is Developer B's
+feature commit on that branch; `239a281` is the merge commit that joined the branch back
+into `main` when Pull Request #1 was merged; and `758afbf` is Developer A committing this
+documentation afterwards. `origin/feature-power-module` still points at `7cc6a4e`,
 showing the branch was kept on the remote.
 
 ---

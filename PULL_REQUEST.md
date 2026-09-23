@@ -18,8 +18,8 @@ GitHub.
 | Merged at | `2026-09-21T12:56:59Z` |
 | Merged by | `veerandra7` |
 | Merge method | merge commit (`gh pr merge 1 --merge`) |
-| **Merge commit SHA** | **`8cb881749c70b0795e22e527bc42ab1b34178b40`** |
-| Commits in PR | 1 (`b3ab4862bf2cded7ea5caa20393fb747b8171c9a`) |
+| **Merge commit SHA** | **`239a281139910882b3bf30baea5f14c445fb9c17`** |
+| Commits in PR | 1 (`7cc6a4e1b300325167d938ab9d141c1e35c0c5d8`) |
 | Diff | 3 files changed, 19 insertions(+), 1 deletion(-) |
 | Branch after merge | kept on the remote, deliberately not deleted |
 
@@ -201,7 +201,7 @@ Verified state after merging:
 
 ```
 {"author":{"login":"veerandra7"},"baseRefName":"main","headRefName":"feature-power-module",
- "mergeCommit":{"oid":"8cb881749c70b0795e22e527bc42ab1b34178b40"},
+ "mergeCommit":{"oid":"239a281139910882b3bf30baea5f14c445fb9c17"},
  "mergedAt":"2026-09-21T12:56:59Z","number":1,"state":"MERGED",
  "title":"Add power module to the calculator",
  "url":"https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1"}
@@ -216,10 +216,10 @@ The merge commit itself, showing **two parents** (proof of a real merge rather t
 squash or a fast-forward):
 
 ```
-commit 8cb881749c70b0795e22e527bc42ab1b34178b40
+commit 239a281139910882b3bf30baea5f14c445fb9c17
 Author: POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com>
 Date:   Mon Sep 21 18:26:59 2026 +0530
-Parents: ca6835b2e01c9fad8a86f5fb01aeab10edaafcd7 b3ab4862bf2cded7ea5caa20393fb747b8171c9a
+Parents: a93b747688befe8017bfc632934a9e79c0aa68e9 7cc6a4e1b300325167d938ab9d141c1e35c0c5d8
 
     Merge pull request #1 from 6-month-fde-challenge/feature-power-module
     Add power module to the calculator (reviewed by Developer A)

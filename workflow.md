@@ -67,10 +67,10 @@ reviewable unit. Splitting the baseline into four commits by responsibility mean
 history explains itself and any single layer can be reverted on its own.
 
 ```
-ca6835b (HEAD -> main) Add calculator orchestrator and dashboard presentation layer
-6cd8f46 Add the four arithmetic modules guarded by API key and profile checks
-bccd4d0 Add login, profile and numeric input collection modules
-a0a23e2 Add project scaffolding with gitignore and environment-based configuration
+a93b747 (HEAD -> main) Add calculator orchestrator and dashboard presentation layer
+180210e Add the four arithmetic modules guarded by API key and profile checks
+ab007de Add login, profile and numeric input collection modules
+90e6154 Add project scaffolding with gitignore and environment-based configuration
 ```
 
 ### 4. Create the remote repository on GitHub and push
@@ -262,7 +262,7 @@ git commit -m "Add power module and expose the result on the dashboard"
 (rather than `git add .`) keeps unrelated junk such as `__pycache__` out.
 
 ```
-[feature-power-module b3ab486] Add power module and expose the result on the dashboard
+[feature-power-module 7cc6a4e] Add power module and expose the result on the dashboard
  3 files changed, 19 insertions(+), 1 deletion(-)
  create mode 100644 power_module.py
 ```
@@ -369,7 +369,7 @@ gh pr view 1 --repo 6-month-fde-challenge/task-04-multi-developer-simulation \
 
 ```
 {"baseRefName":"main","headRefName":"feature-power-module",
- "mergeCommit":{"oid":"8cb881749c70b0795e22e527bc42ab1b34178b40"},
+ "mergeCommit":{"oid":"239a281139910882b3bf30baea5f14c445fb9c17"},
  "mergedAt":"2026-09-21T12:56:59Z","number":1,"state":"MERGED",
  "title":"Add power module to the calculator"}
 ```
@@ -388,8 +388,8 @@ developers' histories actually converge on one machine.
 ```
 From https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation
  * branch            main       -> FETCH_HEAD
-   ca6835b..8cb8817  main       -> origin/main
-Updating ca6835b..8cb8817
+   a93b747..239a281  main       -> origin/main
+Updating a93b747..239a281
 Fast-forward
  calculator.py   |  3 +++
  dashboard.py    |  3 ++-
@@ -405,12 +405,12 @@ git log --format='%h %an <%ae> %s'
 ```
 
 ```
-8cb8817 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
-b3ab486 Developer B <developer-b@example.com> Add power module and expose the result on the dashboard
-ca6835b Developer A (veerandra7) <veerandra.data@gmail.com> Add calculator orchestrator and dashboard presentation layer
-6cd8f46 Developer A (veerandra7) <veerandra.data@gmail.com> Add the four arithmetic modules guarded by API key and profile checks
-bccd4d0 Developer A (veerandra7) <veerandra.data@gmail.com> Add login, profile and numeric input collection modules
-a0a23e2 Developer A (veerandra7) <veerandra.data@gmail.com> Add project scaffolding with gitignore and environment-based configuration
+239a281 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+7cc6a4e Developer B <developer-b@example.com> Add power module and expose the result on the dashboard
+a93b747 Developer A (veerandra7) <veerandra.data@gmail.com> Add calculator orchestrator and dashboard presentation layer
+180210e Developer A (veerandra7) <veerandra.data@gmail.com> Add the four arithmetic modules guarded by API key and profile checks
+ab007de Developer A (veerandra7) <veerandra.data@gmail.com> Add login, profile and numeric input collection modules
+90e6154 Developer A (veerandra7) <veerandra.data@gmail.com> Add project scaffolding with gitignore and environment-based configuration
 ```
 
 ### 21. Fetch everything and print the final history graph
@@ -424,14 +424,14 @@ git log --graph --oneline --all --decorate
 shape, which is the clearest single proof that the branch workflow really happened.
 
 ```
-*   8cb8817 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+*   239a281 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from 6-month-fde-challenge/feature-power-module
 |\
-| * b3ab486 (origin/feature-power-module) Add power module and expose the result on the dashboard
+| * 7cc6a4e (origin/feature-power-module) Add power module and expose the result on the dashboard
 |/
-* ca6835b Add calculator orchestrator and dashboard presentation layer
-* 6cd8f46 Add the four arithmetic modules guarded by API key and profile checks
-* bccd4d0 Add login, profile and numeric input collection modules
-* a0a23e2 Add project scaffolding with gitignore and environment-based configuration
+* a93b747 Add calculator orchestrator and dashboard presentation layer
+* 180210e Add the four arithmetic modules guarded by API key and profile checks
+* ab007de Add login, profile and numeric input collection modules
+* 90e6154 Add project scaffolding with gitignore and environment-based configuration
 ```
 
 ---
