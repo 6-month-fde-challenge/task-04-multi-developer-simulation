@@ -15,10 +15,10 @@ GitHub.
 | Source branch (`--head`) | `feature-power-module` |
 | Target branch (`--base`) | `main` |
 | State | **MERGED** |
-| Merged at | `2026-09-21T12:56:59Z` |
+| Merged at | `2026-09-23T03:49:42Z` |
 | Merged by | `veerandra7` |
 | Merge method | merge commit (`gh pr merge 1 --merge`) |
-| **Merge commit SHA** | **`239a281139910882b3bf30baea5f14c445fb9c17`** |
+| **Merge commit SHA** | **`628be838c86e3f7da3d6336b1dda23b683d0ada6`** |
 | Commits in PR | 1 (`7cc6a4e1b300325167d938ab9d141c1e35c0c5d8`) |
 | Diff | 3 files changed, 19 insertions(+), 1 deletion(-) |
 | Branch after merge | kept on the remote, deliberately not deleted |
@@ -117,9 +117,9 @@ Posted twice so it is visible both as a formal review event and in the conversat
 thread:
 
 - Formal review (`state = COMMENTED`):
-  <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#pullrequestreview-5266839970>
+  <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#pullrequestreview-5286666635>
 - Conversation comment:
-  <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#issuecomment-5760838331>
+  <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#issuecomment-5788644714>
 
 Commands:
 
@@ -201,8 +201,8 @@ Verified state after merging:
 
 ```
 {"author":{"login":"veerandra7"},"baseRefName":"main","headRefName":"feature-power-module",
- "mergeCommit":{"oid":"239a281139910882b3bf30baea5f14c445fb9c17"},
- "mergedAt":"2026-09-21T12:56:59Z","number":1,"state":"MERGED",
+ "mergeCommit":{"oid":"628be838c86e3f7da3d6336b1dda23b683d0ada6"},
+ "mergedAt":"2026-09-23T03:49:42Z","number":1,"state":"MERGED",
  "title":"Add power module to the calculator",
  "url":"https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1"}
 ```
@@ -216,7 +216,7 @@ The merge commit itself, showing **two parents** (proof of a real merge rather t
 squash or a fast-forward):
 
 ```
-commit 239a281139910882b3bf30baea5f14c445fb9c17
+commit 628be838c86e3f7da3d6336b1dda23b683d0ada6
 Author: POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com>
 Date:   Mon Sep 21 18:26:59 2026 +0530
 Parents: a93b747688befe8017bfc632934a9e79c0aa68e9 7cc6a4e1b300325167d938ab9d141c1e35c0c5d8

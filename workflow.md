@@ -346,7 +346,7 @@ gh api repos/6-month-fde-challenge/task-04-multi-developer-simulation/pulls/1/re
 
 ```
 state=COMMENTED by=veerandra7
-https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#issuecomment-5760838331
+https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#issuecomment-5788644714
 ```
 
 ### 18. Merge the Pull Request into `main`
@@ -369,8 +369,8 @@ gh pr view 1 --repo 6-month-fde-challenge/task-04-multi-developer-simulation \
 
 ```
 {"baseRefName":"main","headRefName":"feature-power-module",
- "mergeCommit":{"oid":"239a281139910882b3bf30baea5f14c445fb9c17"},
- "mergedAt":"2026-09-21T12:56:59Z","number":1,"state":"MERGED",
+ "mergeCommit":{"oid":"628be838c86e3f7da3d6336b1dda23b683d0ada6"},
+ "mergedAt":"2026-09-23T03:49:42Z","number":1,"state":"MERGED",
  "title":"Add power module to the calculator"}
 ```
 
@@ -388,8 +388,8 @@ developers' histories actually converge on one machine.
 ```
 From https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation
  * branch            main       -> FETCH_HEAD
-   a93b747..239a281  main       -> origin/main
-Updating a93b747..239a281
+   a93b747..628be83  main       -> origin/main
+Updating a93b747..628be83
 Fast-forward
  calculator.py   |  3 +++
  dashboard.py    |  3 ++-
@@ -405,7 +405,7 @@ git log --format='%h %an <%ae> %s'
 ```
 
 ```
-239a281 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+628be83 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
 7cc6a4e Developer B <developer-b@example.com> Add power module and expose the result on the dashboard
 a93b747 Developer A (veerandra7) <veerandra.data@gmail.com> Add calculator orchestrator and dashboard presentation layer
 180210e Developer A (veerandra7) <veerandra.data@gmail.com> Add the four arithmetic modules guarded by API key and profile checks
@@ -424,7 +424,7 @@ git log --graph --oneline --all --decorate
 shape, which is the clearest single proof that the branch workflow really happened.
 
 ```
-*   239a281 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+*   628be83 (HEAD -> main, origin/main, origin/HEAD) Merge pull request #1 from 6-month-fde-challenge/feature-power-module
 |\
 | * 7cc6a4e (origin/feature-power-module) Add power module and expose the result on the dashboard
 |/

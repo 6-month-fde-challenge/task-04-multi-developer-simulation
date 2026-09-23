@@ -103,7 +103,7 @@ identity - not as two commits from one folder.
 Proof - real output of `git log --format='%h %an <%ae> %s'` on `main`:
 
 ```
-239a281 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+628be83 POTNURU VENKATA ATCHUTA SAI VEERANDRA KUMAR <74710089+veerandra7@users.noreply.github.com> Merge pull request #1 from 6-month-fde-challenge/feature-power-module
 7cc6a4e Developer B <developer-b@example.com> Add power module and expose the result on the dashboard
 a93b747 Developer A (veerandra7) <veerandra.data@gmail.com> Add calculator orchestrator and dashboard presentation layer
 180210e Developer A (veerandra7) <veerandra.data@gmail.com> Add the four arithmetic modules guarded by API key and profile checks
@@ -124,8 +124,8 @@ created the merge commit on the server.
 | URL | <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1> |
 | Title | Add power module to the calculator |
 | Head -> Base | `feature-power-module` -> `main` |
-| State | **MERGED** at `2026-09-21T12:56:59Z` |
-| Merge commit | `239a281139910882b3bf30baea5f14c445fb9c17` |
+| State | **MERGED** at `2026-09-23T03:49:42Z` |
+| Merge commit | `628be838c86e3f7da3d6336b1dda23b683d0ada6` |
 | Diff | 3 files changed, 19 insertions(+), 1 deletion(-) |
 
 **Description (abridged - full text in [`PULL_REQUEST.md`](PULL_REQUEST.md)):** adds
@@ -145,8 +145,8 @@ dashboard and checking `10 ** 5 == 100000`. Two non-blocking observations were r
 a future PR (bounding very large exponents; negative exponents returning a float).
 Verdict: reviewed and approved, no changes requested.
 
-- Formal review event: <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#pullrequestreview-5266839970>
-- Conversation comment: <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#issuecomment-5760838331>
+- Formal review event: <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#pullrequestreview-5286666635>
+- Conversation comment: <https://github.com/6-month-fde-challenge/task-04-multi-developer-simulation/pull/1#issuecomment-5788644714>
 
 **Honest note:** `gh pr review --approve` was attempted first and GitHub refused it with
 `Review Can not approve your own pull request`, because both simulated developers act
@@ -209,7 +209,7 @@ before branching so the feature started from the newest `main`; Developer A ran
 `git pull origin main` after the merge to bring Developer B's work down:
 
 ```
-Updating a93b747..239a281
+Updating a93b747..628be83
 Fast-forward
  calculator.py   |  3 +++
  dashboard.py    |  3 ++-
@@ -286,7 +286,7 @@ the feature branch - which preserves the branch's shape in the history. The alte
 gh pr merge 1 --merge
 ```
 
-The resulting merge commit `239a281` has parents `a93b747` (main) and `7cc6a4e`
+The resulting merge commit `628be83` has parents `a93b747` (main) and `7cc6a4e`
 (feature), which is what the `|\` fork in the graph below shows. When two developers
 change the same lines, this is the step where git reports a **merge conflict** and a
 human decides which version wins; here the change was additive, so it merged cleanly.
@@ -299,7 +299,7 @@ Real output of `git fetch --all && git log --graph --oneline --all --decorate`:
 
 ```
 * 758afbf (HEAD -> main, origin/main, origin/HEAD) Document the multi-developer workflow, Pull Request and code review
-*   239a281 Merge pull request #1 from 6-month-fde-challenge/feature-power-module
+*   628be83 Merge pull request #1 from 6-month-fde-challenge/feature-power-module
 |\
 | * 7cc6a4e (origin/feature-power-module) Add power module and expose the result on the dashboard
 |/
@@ -311,7 +311,7 @@ Real output of `git fetch --all && git log --graph --oneline --all --decorate`:
 
 Reading the graph bottom-up: four commits by Developer A build `main`; the history forks
 at `a93b747` where Developer B created `feature-power-module`; `7cc6a4e` is Developer B's
-feature commit on that branch; `239a281` is the merge commit that joined the branch back
+feature commit on that branch; `628be83` is the merge commit that joined the branch back
 into `main` when Pull Request #1 was merged; and `758afbf` is Developer A committing this
 documentation afterwards. `origin/feature-power-module` still points at `7cc6a4e`,
 showing the branch was kept on the remote.
